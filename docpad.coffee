@@ -297,7 +297,7 @@ docpadConfig = {
     prod:
       templateData:
         site:
-          url: "https://gvtmrob-github.io"
+          url: "https://gvtmrob.github.io"
           blogFeed: "/atom.xml"
           googleAnalytics: deployment.googleAnalytics
           scripts: deployment.scripts
