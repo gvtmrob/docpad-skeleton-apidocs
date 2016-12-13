@@ -4,7 +4,7 @@ const config = {
   skeletonDestination: './src',
   skeletonOutDestination: './out',
   placeholdersLocation: './src/raw/placeholders',
-  docuUrl: process.env.docuURL || 'http://gvtmrob-git.io',
+  docuUrl: process.env.docuURL || 'https://gvtmrob.github.io',
   notClonedRepositoriesFile: 'notClonedRepositories.json',
   indepenedentDocuRepositoriesFile: 'indepenedentDocuRepositories.json',
 
@@ -30,7 +30,7 @@ const config = {
   },
 
   generationResult: {
-    srcLocation: 'https://github.com/gvtmrob/chewie-sample-result.git',
+    srcLocation: 'https://github.com/gvtmrob/gvtmrob.github.io.git',
     branch: process.env.docuBranch || 'master',
     cloneLocation: 'latestResultRepo'
   },
