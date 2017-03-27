@@ -30,7 +30,7 @@ const config = {
   },
 
   generationResult: {
-    srcLocation: process.env.RESULT_LOC || 'https://github.com/gvtmrob/gvtmrob.github.io.git'
+    srcLocation: process.env.RESULT_LOC || 'https://github.com/gvtmrob/gvtmrob.github.io.git',
     branch: process.env.docuBranch || 'master',
     cloneLocation: 'latestResultRepo'
   },
