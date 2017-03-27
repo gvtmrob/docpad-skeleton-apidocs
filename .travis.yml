@@ -1,0 +1,17 @@
+language: node_js
+node_js: 6.9.2
+before_install:
+- git config --global user.name "Travis CI"
+- git config --global user.email "travis@travis-ci.org"
+- export RESULT_LOC='https://'$DEPLOY_TOKEN'@github.com/gvtmrob/gvtmrob.github.io.git'
+- export NODE_ENV=prod
+install:
+- npm run prepare
+script:
+- npm run init
+- npm run compile
+- npm run preparePushResult
+- npm run pushResult
+env:
+  global:
+    secure: empty
