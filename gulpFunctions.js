@@ -22,7 +22,7 @@ const gulp = require('gulp'),
   download = require('gulp-download'),
   async = require('async'),
   path = require('path'),
-  INTERACTIVE_DOCU_SRC_LOC = 'https://devportal.yaas.io/build.zip';
+  INTERACTIVE_DOCU_SRC_LOC = 'https://api.us.yaas.io/hybris/media/v2/public/files/58c27eb6ec8589001d059398';
 
 
 const LOCAL_REGISTRY_PATH = '../sample_data';
@@ -171,7 +171,7 @@ function preparePushResult(cb) {
     'indepenedentDocuRepositoriesFile': config.indepenedentDocuRepositoriesFile
   };
 
-  chewie.preparePushResult(opt, (err) => {
+  chewie.preparePushResult(config, opt, (err) => {
     if (err) {
       log.error(err);
       return cb();
